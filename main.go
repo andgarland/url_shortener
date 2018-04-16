@@ -8,9 +8,9 @@ import (
     "os"
     "os/signal"
     "time"
-    "./database"
-    "./handler"
-    "./config"
+    "github.com/andgarland/url_shortener/database"
+    "github.com/andgarland/url_shortener/handler"
+    "github.com/andgarland/url_shortener/config"
 )
 
 
@@ -36,7 +36,7 @@ func main() {
 	signal.Notify(stop, os.Interrupt)
 
     go func() {
-        fmt.Println("Listening on", server.Addr)
+        fmt.Println("Listening on ", server.Addr)
         if err := server.ListenAndServe(); err != nil {
 			log.Fatal(err)
 		}

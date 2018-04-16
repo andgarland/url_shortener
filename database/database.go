@@ -4,8 +4,8 @@ import (
     "fmt"
     "database/sql"
     _ "github.com/go-sql-driver/mysql"
-    "../encode"
-    "../config"
+    "github.com/andgarland/url_shortener/encode"
+    "github.com/andgarland/url_shortener/config"
 )
 
 //Global database variable
