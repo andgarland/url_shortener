@@ -8,9 +8,9 @@ import (
     "os"
     "os/signal"
     "time"
-    "github.com/andgarland/url_shortener/database"
-    "github.com/andgarland/url_shortener/handler"
-    "github.com/andgarland/url_shortener/config"
+    "./database"
+    "./handler"
+    "./config"
 )
 
 
