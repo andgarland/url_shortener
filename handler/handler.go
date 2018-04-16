@@ -4,7 +4,7 @@ import (
     "net/http"
     "html/template"
     "regexp"
-    "github.com/andgarland/url_shortener/database"
+    "../database"
 )
 
 //Function that creates the request multiplexer. Matches URLs to patterns.
