@@ -1,0 +1,15 @@
+<style type="text/css">.error {color: red;}</style>
+
+<h1>URL Shortener</h1>
+<form action="/" method="POST" novalidate>
+    <div>
+        {{ if . }}
+        <p class="error">Please enter a valid URL (must begin with "http")</p>
+        {{ end }}
+        <label>Your URL:</label>
+        <input type="text" name="url">
+    </div>
+    <div>
+        <input type="submit" value="Shorten">
+    </div>
+</form>
